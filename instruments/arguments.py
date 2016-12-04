@@ -12,3 +12,7 @@ class Arguments(object):
     def splice(arguments):
         command = arguments.popleft()
         return command, list(arguments)
+
+    @staticmethod
+    def assume(arguments, length):
+        return len(arguments) == length

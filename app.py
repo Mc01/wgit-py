@@ -5,12 +5,16 @@ from wizards.add import Add
 from wizards.go import Go
 from wizards.init import Init
 from wizards.list import List
+from wizards.remove import Remove
 
 
 class WatchGit:
     @staticmethod
     def __list_attributes(attributes):
-        return '\n'.join(['-> %s' % a for a in attributes])
+        return '\n'.join([
+            '-> {0:16} {1}'.format(a[0], a[1])
+            for a in attributes
+        ])
 
     def __init__(self):
         attributes = Attributes.describe(WatchGit)
@@ -38,23 +42,28 @@ class WatchGit:
 
     @staticmethod
     def init(args):
-        wizard = Init()
-        wizard.call(args)
+        """Create new config."""
+        Init().call(args)
 
     @staticmethod
     def add(args):
-        wizard = Add()
-        wizard.call(args)
+        """Add current directory as project."""
+        Add().call(args)
+
+    @staticmethod
+    def remove(args):
+        """Remove current directory from projects."""
+        Remove().call(args)
 
     @staticmethod
     def list(args):
-        wizard = List()
-        wizard.call(args)
+        """List all projects."""
+        List().call(args)
 
     @staticmethod
     def go(args):
-        wizard = Go()
-        wizard.call(args)
+        """Jump to project."""
+        Go().call(args)
 
 
 if __name__ == '__main__':
