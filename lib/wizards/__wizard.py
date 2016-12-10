@@ -1,9 +1,9 @@
-from instruments.file import File
+from lib.instruments.file import File
 
 
 class Wizard(object):
     Directory = '~'
-    Config = '.wgit.json'
+    Config = '.json'
 
     @staticmethod
     def assert_config():

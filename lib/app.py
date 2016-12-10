@@ -1,11 +1,12 @@
-from instruments.arguments import Arguments
-from instruments.attributes import Attributes
-from instruments.stream import Stream
-from wizards.add import Add
-from wizards.go import Go
-from wizards.init import Init
-from wizards.list import List
-from wizards.remove import Remove
+from lib.instruments.arguments import Arguments
+from lib.instruments.attributes import Attributes
+from lib.instruments.stream import Stream
+from lib.wizards.add import Add
+from lib.wizards.go import Go
+from lib.wizards.init import Init
+from lib.wizards.list import List
+
+from lib.wizards.remove import Remove
 
 
 class WatchGit:
@@ -24,7 +25,7 @@ class WatchGit:
             if hasattr(self, command):
                 getattr(self, command)(arguments)
             else:
-                Stream.output(
+                Stream.print_output(
                     'You have provided an invalid argument.\n'
                     'Please use one of:\n'
                     '{attributes}'.format(
@@ -32,7 +33,7 @@ class WatchGit:
                     )
                 )
         else:
-            Stream.output(
+            Stream.print_output(
                 'You have not provided any argument.\n'
                 'Please use one of:\n'
                 '{attributes}'.format(

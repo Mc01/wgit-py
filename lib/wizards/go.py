@@ -1,4 +1,4 @@
-from wizards.__wizard import Wizard
+from lib.wizards.__wizard import Wizard
 
 
 class Go(Wizard):

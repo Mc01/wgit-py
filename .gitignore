@@ -1,3 +1,7 @@
 virtual
+dist
+!dist/.gitkeep
 .idea
+*.egg-info
+.DS_Store
 *.pyc

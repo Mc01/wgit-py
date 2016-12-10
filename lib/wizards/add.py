@@ -1,6 +1,7 @@
-from instruments.arguments import Arguments
-from instruments.file import File
-from wizards.__wizard import Wizard
+from lib.instruments.arguments import Arguments
+from lib.wizards.__wizard import Wizard
+
+from lib.instruments.file import File
 
 
 class Add(Wizard):
@@ -16,6 +17,7 @@ class Add(Wizard):
             projects = data.get('projects')
             if alias not in projects.keys():
                 directory = File.get_current()
+                print directory
                 projects.update({
                     alias: dict(
                         name=name,
