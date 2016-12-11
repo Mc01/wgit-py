@@ -1,4 +1,5 @@
 from lib.instruments.arguments import Arguments
+from lib.instruments.stream import Stream
 from lib.wizards.__wizard import Wizard
 
 from lib.instruments.file import File
@@ -13,5 +14,6 @@ class Init(Wizard):
                 Wizard.Directory, Wizard.Config,
                 data=config
             )
+            Stream.print_output('Config file initialised.')
         else:
-            pass
+            Stream.print_output('Please try: wgit init.')

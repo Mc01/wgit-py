@@ -1,4 +1,5 @@
 from lib.instruments.arguments import Arguments
+from lib.instruments.stream import Stream
 from lib.wizards.__wizard import Wizard
 
 from lib.instruments.file import File
@@ -17,18 +18,26 @@ class Add(Wizard):
             projects = data.get('projects')
             if alias not in projects.keys():
                 directory = File.get_current()
-                print directory
                 projects.update({
                     alias: dict(
                         name=name,
-                        dir=directory
+                        directory=directory
                     )
                 })
                 File.write(
                     Wizard.Directory, Wizard.Config,
                     data=data
                 )
+                Stream.print_output(
+                    'Added {name} ({alias}) under directory {directory}.'.format(
+                        name=name,
+                        alias=alias,
+                        directory=directory
+                    )
+                )
             else:
-                pass
+                Stream.print_output('Alias {alias} is already in projects.'.format(
+                    alias=alias
+                ))
         else:
-            pass
+            Stream.print_output('Please try: wgit add {alias} {name}.')

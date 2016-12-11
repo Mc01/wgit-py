@@ -1,4 +1,5 @@
 from lib.instruments.arguments import Arguments
+from lib.instruments.stream import Stream
 from lib.wizards.__wizard import Wizard
 
 from lib.instruments.file import File
@@ -15,12 +16,21 @@ class Remove(Wizard):
             )
             projects = data.get('projects')
             if alias in projects.keys():
-                projects.pop(alias)
+                project = projects.pop(alias)
                 File.write(
                     Wizard.Directory, Wizard.Config,
                     data=data
                 )
+                Stream.print_output(
+                    'Removed {name} ({alias}) under directory {directory}.'.format(
+                        name=project.get('name'),
+                        alias=alias,
+                        directory=project.get('directory')
+                    )
+                )
             else:
-                pass
+                Stream.print_output('Alias {alias} is not in projects.'.format(
+                    alias=alias
+                ))
         else:
-            pass
+            Stream.print_output('Please try: wgit remove {alias}.')
