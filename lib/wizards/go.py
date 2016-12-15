@@ -26,5 +26,5 @@ class Go(Wizard):
             Stream.print_output(
                 'Please ensure config exists'
                 ' (see: wgit init)'
-                ' and try: wgit add {alias} {name}.'
+                ' and try: wgit go {alias}.'
             )

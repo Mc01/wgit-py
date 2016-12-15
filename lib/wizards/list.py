@@ -40,7 +40,7 @@ class List(Wizard):
             else:
                 Stream.print_output(
                     'No projects in config.'
-                    'Please try: wgit add {alias}.'
+                    ' Please try: wgit add {alias} {name}.'
                 )
         else:
             Stream.print_output(
