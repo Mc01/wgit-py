@@ -27,43 +27,43 @@ Installation process
 <br/>
 
 ## Add current directory to projects
+
+Each project has it's alias and name. <br/>
+Alias is the console shortcut to project name.
     
     wgit add {alias} {name}
 
 > Example usage: wgit add flask Flask
-    
-Each project has it's alias and name. <br/>
-Alias is the console shortcut to project name.
 
 <br/>
 
 ## Remove current directory from projects
 
+Keeping project list small and updated is vital. <br/>
+Greatly improves the readability and speed of output.
+
     wgit remove {alias}
 
 > Example usage: wgit remove flask
-    
-Keeping project list small and updated is vital. <br/>
-Greatly improves the readability and speed of output.
 
 <br/>
 
 ## List all projects
 
+Iterating through all projects will list their name and alias. <br/>
+Current git branch and shortlist of changes.
+
     wgit list
 
 > Example output: Flask (flask) master 1 file changed, 4 deletions(-)
-    
-Iterating through all projects will list their name and alias. <br/>
-Current git branch and shortlist of changes.
 
 <br/>
 
 ## Go to directory of project
 
+Jumping directly to project is what it is all about. <br/>
+End user just needs the fast and easy way to navigate.
+
     cd $(wgit go {alias})
 
 > Example usage: cd $(wgit go flask)
-
-Jumping directly to project is what it is all about. <br/>
-End user just needs the fast and easy way to navigate.
