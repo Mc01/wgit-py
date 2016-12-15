@@ -1,9 +1,13 @@
+import sys
 from setuptools import setup, find_packages
 
 
+args = sys.argv
+if len(args) > 1 and args[1] == 'install':
+    raise ValueError('Please try: bash build.sh')
+
+
 description = 'Beautiful project manager living in your shell'
-
-
 setup(
     name='wgit',
     description=description,
@@ -13,6 +17,6 @@ setup(
     author='Mc',
     author_email='phenom.home@gmail.com',
     license='MIT',
-    platfroms='Any',
+    platforms='Any',
     packages=find_packages()
 )

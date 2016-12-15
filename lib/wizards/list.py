@@ -14,27 +14,37 @@ class List(Wizard):
             data = File.read(
                 Wizard.Directory, Wizard.Config
             )
-            projects = data.get('projects')
-            for alias, project in projects.iteritems():
-                name = project.get('name')
-                directory = project.get('dir')
-                branch = Git.get_branch(directory)
-                changes = Git.get_changes(directory)
-                Stream.print_output(
-                    '{name} {alias} {branch} {changes}'.format(
-                        name=Stream.colorize(
-                            name, Stream.Color.Blue
-                        ),
-                        alias=Stream.colorize(
-                            '(%s)' % alias, Stream.Color.Green
-                        ),
-                        branch=Stream.colorize(
-                            branch, Stream.Color.Yellow
-                        ),
-                        changes=Stream.colorize(
-                            changes, Stream.Color.Yellow
+            projects = data.get('projects').items()
+            if projects:
+                for alias, project in projects:
+                    name = project.get('name')
+                    directory = project.get('dir')
+                    branch = Git.get_branch(directory)
+                    changes = Git.get_changes(directory)
+                    Stream.print_output(
+                        '{name} {alias} {branch} {changes}'.format(
+                            name=Stream.colorize(
+                                name, Stream.Color.Blue
+                            ),
+                            alias=Stream.colorize(
+                                '(%s)' % alias, Stream.Color.Green
+                            ),
+                            branch=Stream.colorize(
+                                branch, Stream.Color.Yellow
+                            ),
+                            changes=Stream.colorize(
+                                changes, Stream.Color.Yellow
+                            )
                         )
                     )
+            else:
+                Stream.print_output(
+                    'No projects in config.'
+                    'Please try: wgit add {alias}.'
                 )
         else:
-            pass
+            Stream.print_output(
+                'Please ensure config exists'
+                ' (see: wgit init)'
+                ' and try: wgit list.'
+            )

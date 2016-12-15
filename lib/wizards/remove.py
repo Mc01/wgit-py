@@ -33,4 +33,8 @@ class Remove(Wizard):
                     alias=alias
                 ))
         else:
-            Stream.print_output('Please try: wgit remove {alias}.')
+            Stream.print_output(
+                'Please ensure config exists'
+                ' (see: wgit init)'
+                ' and try: wgit remove {alias}.'
+            )

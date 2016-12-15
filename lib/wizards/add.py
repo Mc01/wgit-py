@@ -40,4 +40,8 @@ class Add(Wizard):
                     alias=alias
                 ))
         else:
-            Stream.print_output('Please try: wgit add {alias} {name}.')
+            Stream.print_output(
+                'Please ensure config exists'
+                ' (see: wgit init)'
+                ' and try: wgit add {alias} {name}.'
+            )
