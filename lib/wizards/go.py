@@ -16,7 +16,7 @@ class Go(Wizard):
             projects = data.get('projects')
             if alias in projects.keys():
                 project = projects.get(alias)
-                directory = project.get('dir')
+                directory = project.get('directory')
                 Stream.print_output(directory)
             else:
                 Stream.print_output('Alias {alias} is not in projects.'.format(

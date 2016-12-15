@@ -18,7 +18,7 @@ class List(Wizard):
             if projects:
                 for alias, project in projects:
                     name = project.get('name')
-                    directory = project.get('dir')
+                    directory = project.get('directory')
                     branch = Git.get_branch(directory)
                     changes = Git.get_changes(directory)
                     Stream.print_output(
