@@ -8,6 +8,9 @@ source ${VIRTUAL}/bin/activate
 pip install -r requirements-install.txt
 rm -f ${SYS}
 rm -f ${DIST}
+echo "Compiling with application with PEX to ${DIST}."
 pex -r requirements.txt . -e lib.app -o ${DIST} --disable-cache
 chmod +x ${DIST}
+echo "Linking executable to ${SYS}."
 ln -s ${DIST} ${SYS}
+echo "Success. Installation complete."
