@@ -20,9 +20,7 @@ Installation process
     bash install.sh
     wgit init
     
-## Features
-
-### Add current directory to projects
+## Add current directory to projects
     
     wgit add {alias} {name}
     Example usage: wgit add flask Flask
@@ -30,7 +28,7 @@ Installation process
 Each project has it's alias and name. <br/>
 Alias is the console shortcut to project name.
 
-### Remove current directory from projects
+## Remove current directory from projects
 
     wgit remove {alias}
     Example usage: wgit remove flask
@@ -38,7 +36,7 @@ Alias is the console shortcut to project name.
 Keeping project list small and updated is vital. <br/>
 Greatly improves the readability and speed of output.
     
-### List all projects
+## List all projects
 
     wgit list
     Example output: Flask (flask) master 1 file changed, 4 deletions(-)
@@ -46,7 +44,7 @@ Greatly improves the readability and speed of output.
 Iterating through all projects will list their name and alias. <br/>
 Current git branch and shortlist of changes.
     
-### Go to directory of project
+## Go to directory of project
 
     cd $(wgit go {alias})
     Example usage: cd $(wgit go flask)
