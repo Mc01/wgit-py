@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 args = sys.argv
 if len(args) > 1 and args[1] == 'install':
-    raise ValueError('Please try: bash build.sh')
+    raise ValueError('Please try: bash install.sh')
 
 
 description = 'Beautiful project manager living in your shell'
