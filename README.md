@@ -9,9 +9,9 @@ Rewritten in beautiful language.
 
 Requirements for installation
 
-    python (https://www.python.org)
-    pip (https://pip.pypa.io)
-    virtualenv (https://virtualenv.pypa.io)
+- python (https://www.python.org)
+- pip (https://pip.pypa.io)
+- virtualenv (https://virtualenv.pypa.io)
 
 <br/>
 
