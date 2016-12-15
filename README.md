@@ -7,7 +7,7 @@
 
     python (https://www.python.org)
     pip (https://pip.pypa.io)
-    virtualenv https://virtualenv.pypa.io
+    virtualenv (https://virtualenv.pypa.io)
 
 ## Setup
 
