@@ -5,9 +5,9 @@
 
 ## Requirements
 
-    python [https://www.python.org] (https://www.python.org)
-    pip [https://pip.pypa.io] (https://pip.pypa.io)
-    virtualenv [(https://virtualenv.pypa.io)] (https://virtualenv.pypa.io)
+    python (https://www.python.org)
+    pip (https://pip.pypa.io)
+    virtualenv https://virtualenv.pypa.io
 
 ## Setup
 
