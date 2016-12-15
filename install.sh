@@ -2,7 +2,7 @@
 VIRTUAL="virtual"
 DIST="$PWD/dist/wgit"
 SYS="/usr/local/bin/wgit"
-rm -f ${VIRTUAL}
+rm -rf ${VIRTUAL}
 virtualenv ${VIRTUAL}
 source ${VIRTUAL}/bin/activate
 pip install -r requirements-install.txt
