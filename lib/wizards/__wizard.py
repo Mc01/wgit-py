@@ -2,7 +2,7 @@ from lib.instruments.file import File
 
 
 class Wizard(object):
-    Directory = '~/wgit'
+    Directory = '~/.wgit'
     Config = '.config.json'
 
     @staticmethod
