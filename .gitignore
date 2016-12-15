@@ -1,5 +1,5 @@
 virtual
-dist
+dist/*
 !dist/.gitkeep
 .idea
 *.egg-info
