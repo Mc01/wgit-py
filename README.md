@@ -3,6 +3,8 @@
 Beautiful project manager living in your shell. <br/>
 Rewritten in beautiful language.
 
+<br/>
+
 ## Requirements
 
 Requirements for installation
@@ -10,6 +12,8 @@ Requirements for installation
     python (https://www.python.org)
     pip (https://pip.pypa.io)
     virtualenv (https://virtualenv.pypa.io)
+
+<br/>
 
 ## Setup
 
@@ -19,7 +23,9 @@ Installation process
     cd ~/.wgit
     bash install.sh
     wgit init
-    
+
+<br/>
+
 ## Add current directory to projects
     
     wgit add {alias} {name}
@@ -28,6 +34,8 @@ Installation process
 Each project has it's alias and name. <br/>
 Alias is the console shortcut to project name.
 
+<br/>
+
 ## Remove current directory from projects
 
     wgit remove {alias}
@@ -35,7 +43,9 @@ Alias is the console shortcut to project name.
     
 Keeping project list small and updated is vital. <br/>
 Greatly improves the readability and speed of output.
-    
+
+<br/>
+
 ## List all projects
 
     wgit list
@@ -43,7 +53,9 @@ Greatly improves the readability and speed of output.
     
 Iterating through all projects will list their name and alias. <br/>
 Current git branch and shortlist of changes.
-    
+
+<br/>
+
 ## Go to directory of project
 
     cd $(wgit go {alias})
