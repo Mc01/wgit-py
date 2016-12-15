@@ -1,5 +1,5 @@
 #!/bin/bash
-venv virtual
+virtualenv virtual
 source virtual/bin/activate
 pip install -r requirements-install.txt
 DIST="$PWD/dist/wgit"
