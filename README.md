@@ -1,15 +1,19 @@
 # wgit.py
 
-    Beautiful project manager living in your shell. 
-    Rewritten in beautiful language.
+Beautiful project manager living in your shell. 
+Rewritten in beautiful language.
 
 ## Requirements
+
+Requirements for installation
 
     python (https://www.python.org)
     pip (https://pip.pypa.io)
     virtualenv (https://virtualenv.pypa.io)
 
 ## Setup
+
+Installation process
 
     git clone https://github.com/watchgit-com/wgit-py.git ~/.wgit
     cd ~/.wgit
@@ -22,18 +26,30 @@
     
     wgit add {alias} {name}
     Example usage: wgit add flask Flask
+    
+Each project has it's alias and name. 
+Alias is the console shortcut to project name.
 
 ### Remove current directory from projects
 
     wgit remove {alias}
     Example usage: wgit remove flask
     
-### List all projects and review their current status
+Keeping project list small and updated is vital.
+Greatly improves the readability and speed of output.
+    
+### List all projects
 
     wgit list
     Example output: Flask (flask) master 1 file changed, 4 deletions(-)
     
-### Change working directory to the one from project
+Iterating through all projects will list their name and alias.
+Current git branch and shortlist of changes.
+    
+### Go to directory of project
 
     cd $(wgit go {alias})
     Example usage: cd $(wgit go flask)
+
+Jumping directly to project is what it is all about.
+End user just needs the fast and easy way to navigate.
