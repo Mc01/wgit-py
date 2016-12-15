@@ -3,10 +3,9 @@
     Beautiful project manager living in your shell. 
     Rewritten in beautiful language.
 
-## Features available
+## Setup
 
-    Init
-    Add
-    Remove
-    List
-    Go
+    git clone https://github.com/watchgit-com/wgit-py.git ~/.wgit
+    cd ~/.wgit
+    bash install.sh
+    

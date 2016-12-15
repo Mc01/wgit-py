@@ -1,4 +1,7 @@
 #!/bin/bash
+venv virtual
+source virtual/bin/activate
+pip install -r requirements-install.txt
 DIST="$PWD/dist/wgit"
 SYS="/usr/local/bin/wgit"
 rm -f ${SYS}
