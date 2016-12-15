@@ -67,3 +67,7 @@ End user just needs the fast and easy way to navigate.
     cd $(wgit go {alias})
 
 > Example usage: cd $(wgit go flask)
+
+## License
+
+MIT
