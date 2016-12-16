@@ -5,6 +5,10 @@ Rewritten in beautiful language.
 
 <br/>
 
+![https://github.com/watchgit-com/wgit-py/blob/master/wgit.png](wgit.png)
+
+<br/>
+
 ## Requirements
 
 Requirements for installation
