@@ -14,7 +14,7 @@ class List(Wizard):
             data = File.read(
                 Wizard.Directory, Wizard.Config
             )
-            projects = data.get('projects').items()
+            projects = sorted(data.get('projects').items())
             if projects:
                 for alias, project in projects:
                     name = project.get('name')
