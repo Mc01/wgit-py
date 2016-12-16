@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 VIRTUAL="virtual"
 DIST="$PWD/dist/wgit"
 SYS="/usr/local/bin/wgit"
