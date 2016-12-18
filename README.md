@@ -28,8 +28,6 @@ Installation process
     bash install.sh
     wgit init
 
-![https://github.com/watchgit-com/wgit-py/blob/master/images/init.png](images/init.png)
-
 <br/>
 
 ## Add current directory to projects
@@ -40,6 +38,8 @@ Alias is the console shortcut to project name.
     wgit add {alias} {name}
 
 > Example usage:
+
+<br/>
 
 ![https://github.com/watchgit-com/wgit-py/blob/master/images/add.png](images/add.png)
 
@@ -54,6 +54,8 @@ Greatly improves the readability and speed of output.
 
 > Example usage:
 
+<br/>
+
 ![https://github.com/watchgit-com/wgit-py/blob/master/images/remove.png](images/remove.png)
 
 <br/>
@@ -67,6 +69,8 @@ Current git branch and shortlist of changes.
 
 > Example usage: 
 
+<br/>
+
 ![https://github.com/watchgit-com/wgit-py/blob/master/images/list.png](images/list.png)
 
 <br/>
@@ -79,6 +83,8 @@ End user just needs the fast and easy way to navigate.
     cd $(wgit go {alias})
 
 > Example usage:
+
+<br/>
 
 ![https://github.com/watchgit-com/wgit-py/blob/master/images/go.png](images/go.png)
 
