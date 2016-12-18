@@ -5,7 +5,7 @@ Rewritten in beautiful language.
 
 <br/>
 
-![https://github.com/watchgit-com/wgit-py/blob/master/wgit.png](wgit.png)
+![https://github.com/watchgit-com/wgit-py/blob/master/images/wgit.png](images/wgit.png)
 
 <br/>
 
@@ -37,7 +37,11 @@ Alias is the console shortcut to project name.
     
     wgit add {alias} {name}
 
-> Example usage: wgit add flask Flask
+> Example usage:
+
+<br/>
+
+![https://github.com/watchgit-com/wgit-py/blob/master/images/add.png](images/add.png)
 
 <br/>
 
@@ -48,7 +52,11 @@ Greatly improves the readability and speed of output.
 
     wgit remove {alias}
 
-> Example usage: wgit remove flask
+> Example usage:
+
+<br/>
+
+![https://github.com/watchgit-com/wgit-py/blob/master/images/remove.png](images/remove.png)
 
 <br/>
 
@@ -59,7 +67,11 @@ Current git branch and shortlist of changes.
 
     wgit list
 
-> Example output: Flask (flask) master 1 file changed, 4 deletions(-)
+> Example usage: 
+
+<br/>
+
+![https://github.com/watchgit-com/wgit-py/blob/master/images/list.png](images/list.png)
 
 <br/>
 
@@ -70,7 +82,13 @@ End user just needs the fast and easy way to navigate.
 
     cd $(wgit go {alias})
 
-> Example usage: cd $(wgit go flask)
+> Example usage:
+
+<br/>
+
+![https://github.com/watchgit-com/wgit-py/blob/master/images/go.png](images/go.png)
+
+<br/>
 
 ## License
 
