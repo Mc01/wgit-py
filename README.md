@@ -37,9 +37,9 @@ Alias is the console shortcut to project name.
     
     wgit add {alias} {name}
 
-> Example usage:
-
 <br/>
+
+> Example usage:
 
 ![https://github.com/watchgit-com/wgit-py/blob/master/images/add.png](images/add.png)
 
@@ -52,9 +52,9 @@ Greatly improves the readability and speed of output.
 
     wgit remove {alias}
 
-> Example usage:
-
 <br/>
+
+> Example usage:
 
 ![https://github.com/watchgit-com/wgit-py/blob/master/images/remove.png](images/remove.png)
 
@@ -67,9 +67,9 @@ Current git branch and shortlist of changes.
 
     wgit list
 
-> Example usage: 
-
 <br/>
+
+> Example usage: 
 
 ![https://github.com/watchgit-com/wgit-py/blob/master/images/list.png](images/list.png)
 
@@ -82,9 +82,9 @@ End user just needs the fast and easy way to navigate.
 
     cd $(wgit go {alias})
 
-> Example usage:
-
 <br/>
+
+> Example usage:
 
 ![https://github.com/watchgit-com/wgit-py/blob/master/images/go.png](images/go.png)
 
