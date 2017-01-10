@@ -7,7 +7,8 @@ class Stream(object):
     class Color(object):
         Blue = 'blue'
         Green = 'green'
-        Yellow = 'red'
+	Red = 'red'
+        Yellow = 'yellow'
 
     @staticmethod
     def print_output(string):

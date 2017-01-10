@@ -30,7 +30,7 @@ class List(Wizard):
                                 '(%s)' % alias, Stream.Color.Green
                             ),
                             branch=Stream.colorize(
-                                branch, Stream.Color.Yellow
+                                branch, Stream.Color.Red
                             ),
                             changes=Stream.colorize(
                                 changes, Stream.Color.Yellow
