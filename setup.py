@@ -12,7 +12,7 @@ setup(
     name='wgit',
     description=description,
     long_description=description,
-    url='https://www.wgit.co',
+    url='https://www.watchgit.com',
     version='1.0',
     author='Mc',
     author_email='phenom.home@gmail.com',
